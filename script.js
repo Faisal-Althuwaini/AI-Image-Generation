@@ -1,4 +1,4 @@
-const api = "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"
+const api = "PUT YOUR OPENAI API KEY HERE"
 
 const input = document.getElementById("input")
 
@@ -26,5 +26,17 @@ const getImage = async () => {
 
     // Parse the response as json
     const data = await res.json()
-    console.log(data)
+    const listImages = data.data
+    document.getElementById("images").innerHTML = ""
+    for (img of listImages) {
+    console.log(listImages)
+    let content = `
+    
+    <div class="h-[200px] w-[200px] bg-slate-800 rounded-lg shadow-lg shadow-slate-500/20"><img src="${img.url}" alt=""></div>
+
+    `
+    document.getElementById("images").innerHTML += content
+    
+    }   
+
 }

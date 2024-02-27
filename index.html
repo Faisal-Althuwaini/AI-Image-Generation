@@ -6,26 +6,28 @@
     <title>AI Image Generation</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-900 text-white ">
-    <div class=" flex items-center  flex-col h-screen justify-around my-10 ">
+<body class="bg-gradient-to-r from-slate-900 to-slate-800 text-white ">
+    <div class=" flex   flex-col items-center justify-center my-10">
 
         <div>
-            <h1 class="md:text-4xl text-3xl font-bold md:mb-0 mb-7 ">AI Image Generation</h1>
+            <h1 class="md:text-4xl text-3xl font-bold  mb-8 ">AI Image Generation</h1>
         </div>
 
-        <div class="images flex flex-col md:flex-row gap-5 mb-9 ">
-            <div class="h-[200px] w-[200px] bg-slate-800 rounded-lg"></div>
-            <div class="h-[200px] w-[200px] bg-slate-800 rounded-lg"></div>
-            <div class="h-[200px] w-[200px] bg-slate-800 rounded-lg"></div>
+        <div id="images" class="images flex flex-col md:flex-row md:gap-5 gap-14 mb-9 ">
+            <div class="h-[200px] w-[200px] bg-slate-800 rounded-lg shadow-lg shadow-slate-500/20"><img src="" alt=""></div>
+            <div class="h-[200px] w-[200px] bg-slate-800 rounded-lg shadow-lg shadow-slate-500/20"></div>
+            <div class="h-[200px] w-[200px] bg-slate-800 rounded-lg shadow-lg shadow-slate-500/20"></div>
         </div>
 
-        <div class="prompt bg-slate-800 p-2 md:w-2/5 w-4/5 border border-slate-700 flex flex-row">
+        
+
+        <div class="prompt bg-slate-800 p-2 mt-5 md:w-2/5 w-4/5 border border-slate-700 flex flex-row rounded-xl">
             <input type="text" id="input" class="bg-slate-800 w-4/5 outline-none md:text-2xl text-lg ">
             <button onclick="getImage()" class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-2  focus:outline-none focus:ring-green-200 font-medium rounded-lg md:text-lg text-sm md:px-6 py-2.5 text-center  md:w-1/5 w-1/4">Generate</button>
         </div>
 
         <div>
-            <h4 class="mt-7">Made By <a class="font-bold" target="_blank" href="https://www.linkedin.com/in/faisal-al-thuwaini/">Faisal Althuwaini</a></h4>
+            <h4 class="my-7">Made By <a class="font-bold text-lg text-slate-400" target="_blank" href="https://www.linkedin.com/in/faisal-al-thuwaini/">Faisal Althuwaini</a></h4>
         </div>
     </div>
 
