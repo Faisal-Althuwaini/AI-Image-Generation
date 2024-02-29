@@ -1,5 +1,5 @@
 # AI Image generation 
-Using TailwindCss
+Using TailwindCss and OpenAI API
 
 ## How to try it 
 1- you have to clone it <br>
